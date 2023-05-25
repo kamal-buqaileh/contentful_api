@@ -1,0 +1,16 @@
+<% if flash[:notice] %>
+  <div class="error"><%= flash[:error] %></div>
+<% end %>
+<div style="float: left; margin: 10px; text-align: center;">
+    <h3>Chef:</h3>
+    <p><%=@recipe[:chef] || "N/A"%></p>
+
+    <h3><%=@recipe[:title]%></h3>
+    <img src=<%=@recipe[:photo_url]%> width="300" height="300">
+    <h3>description:</h3>
+    <p><%=sanitize @recipe[:description]%></p>
+
+    <br>
+    <h3>tags:</h3>
+    <p><%=@recipe[:tags] || "N/A"%></p>
+</div>

@@ -1,0 +1,8 @@
+<%@recipes.each do |recipe|%>
+    <a href=<%=recipe_url(recipe[:id])%>>
+        <div style="float: left; border: solid black 1px; margin: 10px; text-align: center; width: 550px">
+            <h3><%=recipe[:title]%></h3>
+            <img src=<%=recipe[:photo_url]%> width="300" height="300">
+        </div>
+    </a>
+<%end%>
