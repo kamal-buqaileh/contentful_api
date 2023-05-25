@@ -9,7 +9,7 @@ there is no database in this project, in this project you will find an implement
 
 # Run
 - `$ bundle install`
-- `$ Rails s`
+- `$ rails s`
 
 # Rspec
 to run tests run 
